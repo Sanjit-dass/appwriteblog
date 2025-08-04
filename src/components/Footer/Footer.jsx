@@ -47,15 +47,29 @@ function Footer() {
               <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-gray-500 dark:text-gray-300">
                 Support
               </h3>
-              <ul>
-                {['Account', 'Help', 'Contact Us', 'Customer Support'].map((item, index) => (
-                  <li key={index} className="mb-4 last:mb-0">
-                    <Link className="text-base font-medium text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300" to="/">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+             <ul>
+  <li className="mb-4">
+    <Link to="/account" className="text-base font-medium text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+      Account
+    </Link>
+  </li>
+  <li className="mb-4">
+    <Link to="/help" className="text-base font-medium text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+      Help
+    </Link>
+  </li>
+  <li className="mb-4">
+    <Link to="/contact" className="text-base font-medium text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+      Contact Us
+    </Link>
+  </li>
+  <li className="mb-4 last:mb-0">
+    <Link to="/support" className="text-base font-medium text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+      Customer Support
+    </Link>
+  </li>
+</ul>
+
             </div>
           </div>
 

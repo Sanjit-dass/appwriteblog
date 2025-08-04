@@ -15,18 +15,28 @@ export default function RTE({ name, control, label, defaultValue = "" }) {
             apiKey="5xkl9v4zlwyg0l769ztvrknxkznfbkig9a1mv6p5izoutovj"
             initialValue={defaultValue}
             init={{
-              height: 500,
-              menubar: true,
+              height: 400,
+              menubar: false,
               plugins: [
                 'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
                 'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
                 'insertdatetime', 'media', 'table', 'help', 'wordcount'
               ],
+              toolbar_mode: 'sliding', // Better for mobile
               toolbar:
                 'undo redo | blocks | bold italic forecolor | ' +
                 'alignleft aligncenter alignright alignjustify | ' +
                 'bullist numlist outdent indent | removeformat | help',
               content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+              mobile: {
+                menubar: false,
+                toolbar: [
+                  'undo redo bold italic',
+                  'bullist numlist',
+                  'link image'
+                ]
+              },
+              resize: true,
             }}
             onEditorChange={onChange}
           />

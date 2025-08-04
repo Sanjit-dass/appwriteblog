@@ -10,12 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@heroicons/react": "^2.2.0",
     "@reduxjs/toolkit": "^2.8.2",
     "@tinymce/tinymce-react": "^6.2.1",
-    "appwrite": "^18.1.1",
+    "appwrite": "^18.2.0",
+    "axios": "^1.11.0",
+    "emailjs-com": "^3.2.0",
     "html-react-parser": "^5.2.6",
     "lucide-react": "^0.535.0",
+    "openai": "^5.11.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-hook-form": "^7.60.0",

@@ -7,7 +7,7 @@ const conf = {
     appwriteBucketId: String(import.meta.env.VITE_APPWRITE_BUCKET_ID),
     resetUrl: String(import.meta.env.VITE_APPWRITE_RECOVERY_URL),
     appwriteUsersCollectionId:String(import.meta.env.VITE_APPWRITE_USERS_COLLECTION_ID),
-
+     openAIApiKey: String(import.meta.env.VITE_OPENAI_API_KEY)
 }
 
 export default conf

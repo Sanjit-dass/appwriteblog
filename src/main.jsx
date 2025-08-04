@@ -17,6 +17,8 @@ import AllPosts from './pages/AllPosts';
 import AddPost from './pages/AddPost';
 import EditPosts from './pages/EditPosts';
 import Post from './pages/Post';
+import Contact from './pages/Contact.jsx';
+import HelpPage from './pages/HelpPage.jsx';
 
 
 
@@ -91,7 +93,24 @@ const router = createBrowserRouter([
       <UserProfile />
     </AuthLayout>
   ),
- }
+ },
+ {
+     path: "/contact",
+  element: (
+    <AuthLayout authentication>
+      <Contact />
+    </AuthLayout>
+  ),
+ },
+  {
+     path: "/help",
+  element: (
+    <AuthLayout authentication>
+      <HelpPage />
+    </AuthLayout>
+  ),
+ },
+ 
     ],
 },
 ])
